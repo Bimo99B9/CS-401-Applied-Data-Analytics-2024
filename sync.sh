@@ -1,4 +1,3 @@
-
 #!/bin/bash
 
 # This script automates tasks for working with a forked Git repository for course material.
@@ -42,23 +41,31 @@ function check_updates() {
 }
 
 # Main menu
-PS3="Choose an option: "
-options=("Pull Updates from Upstream" "Push Work to Origin" "Check for New Updates" "Quit")
-select opt in "${options[@]}"
-do
-    case $opt in
-        "Pull Updates from Upstream")
-            pull_upstream
-            ;;
-        "Push Work to Origin")
-            push_origin
-            ;;
-        "Check for New Updates")
-            check_updates
-            ;;
-        "Quit")
-            break
-            ;;
-        *) echo "Invalid option $REPLY";;
-    esac
+while true; do
+  echo "-------------------"
+  echo "Choose an option:"
+  echo "1) Pull Updates from Upstream"
+  echo "2) Push Work to Origin"
+  echo "3) Check for New Updates"
+  echo "q) Quit"
+  echo "-------------------"
+  read -p "Option: " opt
+  case $opt in
+  1)
+    pull_upstream
+    ;;
+  2)
+    push_origin
+    ;;
+  3)
+    check_updates
+    ;;
+  q)
+    echo "Quitting the script."
+    break
+    ;;
+  *)
+    echo "Invalid option. Please try again."
+    ;;
+  esac
 done
