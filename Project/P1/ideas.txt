@@ -1,0 +1,11 @@
+1: The influence of alcohol content and beer characteristics on consumer evaluations
+
+In this idea, we would investigate how alcohol content (ABV) and other beer characteristics influence consumer ratings and preferences. Do higher ABV beers receive better ratings due to perceived quality, or do consumers prefer lower ABV beers for their drinkability? How do factors such as bitterness, colour and brewing methods affect satisfaction? By analysing the Beers data and Ratings datasets, we can correlate ABV and other attributes with consumer ratings. We will perform statistical analysis to identify trends and use regression models to quantify the impact of each attribute on ratings. This could reveal which attributes are most valued by consumers and help breweries target their products accordingly.
+
+2: Predicting beer categories using NLP on review text
+
+We would use natural language processing to predict a beer's style based only on user reviews. Can the language and descriptions in reviews accurately classify beers into their styles? By analysing the Reviews DataFrame, focusing on the 'text' and 'style' columns, we can pre-process the texts and use machine learning algorithms to predict the style from the review. This could help to understand whether people are correctly rating the beers and understanding the flavours. Evaluating the accuracy of the model and identifying key linguistic features can reveal how consumers describe different beer styles and the distinctive vocabulary associated with each.
+
+3: Identifying regional preferences - analysing how geography influences beer tastes and ratings
+
+Here, we would investigate how geographical factors shape beer preferences and consumer ratings, revealing regional trends and cultural influences and the differences in preferred beer styles and ratings between regions or countries. For example, by studying if local beers receive higher ratings from local consumers. By combining users'data and their reviews (ratings and reviews) and the beers and breweries datasets (beer and brewery locations), we can map ratings and styles to geographic regions. Statistical analysis and geospatial visualisations could help to identify regional preferences and trends, providing insights into how culture and location influence beer consumption.

@@ -1,12 +1,12 @@
-# beeradvocate_loader.py
+# beerdata_loader.py
 
 import pandas as pd
 import csv
 import os
 
 
-class BeerAdvocateDataLoader:
-    def __init__(self, data_dir="../data/BeerAdvocate", force_process=False):
+class BeerDataLoader:
+    def __init__(self, data_dir, force_process=False):
         """
         Initializes the data loader with the specified data directory.
 
